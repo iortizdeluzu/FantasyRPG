@@ -78,6 +78,8 @@ theme_override_font_sizes/font_size = 27
 text = "Quit Game"
 script = ExtResource("1")
 
+[node name="HTTPRequestActualizador" type="HTTPRequest" parent="."]
+
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Start Game" to="CenterContainer/VBoxContainer/Start Game" method="_on_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Continuar Partida" to="." method="_on_continuar_partida_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Copyright" to="CenterContainer/VBoxContainer/Copyright" method="_on_pressed"]

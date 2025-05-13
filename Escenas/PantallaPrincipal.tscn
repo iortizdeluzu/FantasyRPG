@@ -84,6 +84,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_e7olw")
 theme_override_font_sizes/font_size = 26
 text = "
+
+Hola Mundo !!
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae congue ipsum. Integer at justo egestas, varius quam et, posuere tellus. Donec tortor quam, placerat id dolor in, luctus posuere ligula. Proin non mi eget nunc cursus efficitur vel vel lorem. Nullam sodales placerat ante vitae vestibulum. Duis vel est ultricies, rhoncus nulla et, feugiat augue. Suspendisse luctus arcu elit, vel blandit orci ullamcorper sed.
 
 Vivamus vulputate iaculis efficitur. Sed suscipit maximus orci et lobortis. Sed quis ante vitae ipsum malesuada placerat. Aliquam eget urna dignissim, aliquam massa nec, semper augue. Proin dictum neque sed nibh dignissim sodales. Ut non leo rhoncus, egestas nisl sed, sagittis lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc lacinia et tellus vel sodales. Quisque laoreet ante luctus, consequat erat eu, tincidunt purus. Vestibulum laoreet efficitur libero non mollis. Aliquam pulvinar dapibus lorem, sed convallis sem malesuada sit amet. Praesent tristique fermentum eros.

@@ -8,4 +8,3 @@ var fuerza = 0
 var inteligencia = 0
 var carisma = 0
 var capitulo_actual: String = ""
-
