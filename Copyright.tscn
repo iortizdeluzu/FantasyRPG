@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://be84vgxk1j76n"]
+
+[ext_resource type="Texture2D" uid="uid://bo81byd6boss" path="res://images/background.jpg" id="1_lhcnl"]
+[ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="2_7mn75"]
+[ext_resource type="Script" uid="uid://muinpc6utkau" path="res://back.gd" id="3_fb2js"]
+
+[node name="Introduction" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lhcnl")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 22
+text = "© 2025 Iker Ortiz de Luzuriaga. All rights reserved.
+
+This game is protected by copyright and may not be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without prior written permission of the copyright owner, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+
+The game is provided \"as is\" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+FantasyRPG is a trademark of Iker Ortiz de Luzuriaga.
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 2
+uppercase = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -195.0
+offset_top = -231.0
+offset_right = 166.0
+offset_bottom = -200.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_7mn75")
+text = "Back to Main Menu"
+script = ExtResource("3_fb2js")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

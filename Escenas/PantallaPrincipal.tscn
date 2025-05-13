@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbgal1hk75lje"]
+
+[ext_resource type="Script" uid="uid://b525mldhwywjo" path="res://Escenas/pantalla_principal.gd" id="1_6jwxa"]
+[ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="1_cgdrp"]
+[ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="2_e7olw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6jwxa")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cgdrp")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.0666667, 0.0666667, 0.0666667, 1)
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ChapterTitle" type="Label" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_e7olw")
+theme_override_font_sizes/font_size = 30
+text = "Capitulo 1: Las minas de Kragthûm"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("2_e7olw")
+theme_override_font_sizes/font_size = 30
+text = "Menu   "
+
+[node name="PopupOpciones" type="PopupMenu" parent="MarginContainer/TopBar/MenuButton"]
+position = Vector2i(580, 60)
+size = Vector2i(131, 100)
+theme_override_fonts/font = ExtResource("2_e7olw")
+theme_override_font_sizes/font_size = 30
+item_count = 2
+item_0/text = "Menú principal"
+item_0/id = 0
+item_1/text = "Guardar"
+item_1/id = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Capitulo-1-1" type="Label" parent="ScrollContainer"]
+custom_minimum_size = Vector2(100, 1000)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_e7olw")
+theme_override_font_sizes/font_size = 26
+text = "
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae congue ipsum. Integer at justo egestas, varius quam et, posuere tellus. Donec tortor quam, placerat id dolor in, luctus posuere ligula. Proin non mi eget nunc cursus efficitur vel vel lorem. Nullam sodales placerat ante vitae vestibulum. Duis vel est ultricies, rhoncus nulla et, feugiat augue. Suspendisse luctus arcu elit, vel blandit orci ullamcorper sed.
+
+Vivamus vulputate iaculis efficitur. Sed suscipit maximus orci et lobortis. Sed quis ante vitae ipsum malesuada placerat. Aliquam eget urna dignissim, aliquam massa nec, semper augue. Proin dictum neque sed nibh dignissim sodales. Ut non leo rhoncus, egestas nisl sed, sagittis lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc lacinia et tellus vel sodales. Quisque laoreet ante luctus, consequat erat eu, tincidunt purus. Vestibulum laoreet efficitur libero non mollis. Aliquam pulvinar dapibus lorem, sed convallis sem malesuada sit amet. Praesent tristique fermentum eros.
+
+Curabitur dictum quis neque id aliquam. Etiam at mauris porttitor dui dignissim vehicula id ut dui. Ut laoreet pellentesque sapien, volutpat dictum libero ultricies at. Etiam placerat vehicula diam sit amet volutpat. Duis tristique placerat sem blandit molestie. Nam sollicitudin risus ac quam auctor fringilla. Nunc pellentesque scelerisque fringilla. Maecenas ut pellentesque risus. Ut luctus quam id risus tincidunt, a egestas erat elementum. Suspendisse metus ipsum, ornare at imperdiet quis, ullamcorper sed diam. Vestibulum quis eros ac lorem ornare mattis id at nisl. Nulla hendrerit vehicula odio quis finibus. Proin ullamcorper enim tellus. In varius magna eu blandit vulputate. Pellentesque cursus diam quis egestas bibendum.
+
+Morbi consectetur, risus nec aliquam sollicitudin, orci arcu lobortis metus, sed tincidunt felis lacus ut lectus. Maecenas id congue ipsum. Phasellus nec maximus neque. Etiam interdum quam eu faucibus ultricies. Phasellus venenatis eros in nisl luctus rutrum. Fusce sollicitudin pulvinar turpis nec dapibus. Aliquam in orci vitae neque bibendum ornare sed id felis. Etiam ornare, nisi a lobortis malesuada, arcu orci fermentum nulla, vitae ultrices elit quam sed odio. Vestibulum cursus dolor in enim viverra, feugiat facilisis dui rhoncus. Suspendisse facilisis ut leo at efficitur. Quisque fringilla mollis metus hendrerit malesuada.
+
+In in erat enim. Mauris finibus ipsum tellus, id rutrum ante molestie sit amet. Nulla ipsum eros, mattis et metus id, iaculis feugiat leo. Aliquam vitae purus quis lacus dictum molestie. Quisque rutrum lorem imperdiet accumsan semper. Integer lobortis, ex eget pretium tempus, ex neque fringilla massa, nec malesuada eros augue ut dolor. Quisque vitae vulputate risus. Pellentesque porta pulvinar odio, sed tincidunt neque cursus vitae. Aenean a maximus neque, id ornare tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor quis ex ornare vulputate. Nulla eget neque non sapien iaculis commodo non in nisi. Pellentesque tortor lectus, convallis nec tincidunt iaculis, maximus a ipsum. Donec ex erat, pharetra vitae placerat ac, cursus et turpis. "
+autowrap_mode = 3
+
+[connection signal="pressed" from="MarginContainer/TopBar/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="id_pressed" from="MarginContainer/TopBar/MenuButton/PopupOpciones" to="." method="_on_popup_opciones_id_pressed"]

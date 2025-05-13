@@ -1,0 +1,133 @@
+[gd_scene load_steps=6 format=3 uid="uid://h2jyh77q3g2q"]
+
+[ext_resource type="Texture2D" uid="uid://bo81byd6boss" path="res://images/background.jpg" id="1_lhcnl"]
+[ext_resource type="Script" uid="uid://cqqkklebaf02p" path="res://Introduction.gd" id="1_wh3ee"]
+[ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="2_7mn75"]
+[ext_resource type="Script" uid="uid://muinpc6utkau" path="res://back.gd" id="3_tr1uk"]
+[ext_resource type="Script" uid="uid://bybaiu4epxgku" path="res://continuar.gd" id="4_wh3ee"]
+
+[node name="Introduction" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wh3ee")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lhcnl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 51.0
+offset_right = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_stretch_ratio = 10.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="MessageLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 30
+text = "Hola, pobre alma inocente. Bienvenido a Dhanazar, un reino escondido entre montañas de difícil acceso, donde los vientos gélidos golpean sin piedad y los caminos se pierden entre las nieblas. Es un lugar donde las leyendas caminan con nosotros y los misterios acechan cada rincón. En este mundo, cada paso cuenta, y cada decisión podría ser tu última.
+
+Las fuerzas que habitan estas tierras no son fáciles de comprender, pero tú, que has llegado hasta aquí, eres parte de algo mucho más grande. Antes de que inicies tu viaje, ¿cómo deseas que te llamen en estas tierras? 
+
+Introduce tu nombre, y que el destino te guíe."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 26
+text = "nombre"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Button_fuerte" type="Button" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 26
+text = "Fuerte"
+
+[node name="Button_inteligente" type="Button" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 26
+text = "Inteligente"
+
+[node name="Button_carisma" type="Button" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 26
+text = "Carismatico
+"
+
+[node name="MessageLabel2" type="Label" parent="VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(400, 10)
+layout_mode = 2
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 30
+text = "Bueno....... Allá tu si quieres adentrarte en este mundo. No me hago responsable de tus desgracias. 
+
+Buena suerte."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Continuar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 30
+text = "Continuar"
+script = ExtResource("4_wh3ee")
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -94.0
+offset_top = -99.0
+offset_right = 89.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 30
+text = "Al Menu Principal"
+script = ExtResource("3_tr1uk")
+
+[connection signal="pressed" from="VBoxContainer/Button_fuerte" to="." method="_on_button_fuerte_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button_inteligente" to="." method="_on_button_inteligente_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button_carisma" to="." method="_on_button_carisma_pressed"]
+[connection signal="pressed" from="VBoxContainer/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="Back" to="Back" method="_on_pressed"]

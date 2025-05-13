@@ -1,0 +1,31 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1747037790
+Control.gd::GDScript/GDScript::3813647787567269349::1746616826::0::1::::<>Control<><>0<>0<><>::
+Copyright.tscn::PackedScene::2737099169751526675::1746796814::0::1::::<><><>0<>0<><>::uid://bo81byd6boss::::res://images/background.jpg<>uid://b6aib81rqaksp::::res://Fonts/Tagesschrift-Regular.ttf<>uid://muinpc6utkau::::res://back.gd
+default_env.tres::Environment::7386787740557302399::1747037790::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1746796845::0::1::::<><><>0<>0<><>::
+GameIntro.tscn::PackedScene::547649835388071966::1747037790::0::1::::<><><>0<>0<><>::uid://bo81byd6boss::::res://images/background.jpg<>uid://cqqkklebaf02p::::res://Introduction.gd<>uid://b6aib81rqaksp::::res://Fonts/Tagesschrift-Regular.ttf<>uid://muinpc6utkau::::res://back.gd<>uid://bybaiu4epxgku::::res://continuar.gd
+icon.png::CompressedTexture2D/CompressedTexture2D::1260570682475731888::1746607164::1746616850::1::::<><><>0<>0<>2ba46eb59eb331b93e0f318899c38d8b<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+Main Menu.tscn::PackedScene::4543107869346836163::1747037790::0::1::::<><><>0<>0<><>::uid://dmj5p0cxdndd3::::res://Quit Game.gd<>uid://bo81byd6boss::::res://images/background.jpg<>uid://b6aib81rqaksp::::res://Fonts/Tagesschrift-Regular.ttf<>uid://ck4642spr3bkg::::res://start_game.gd<>uid://fjrhjk4dipgu::::res://copyright.gd
+Quit Game.gd::GDScript::8021957188436697862::1746710882::0::1::::<>Button<><>0<>0<><>::
+Copyright.gd::GDScript::5180615293296150604::1746628151::0::1::::<>Button<><>0<>0<><>::
+copyright.gd::GDScript::370568796891227820::1746710882::0::1::::<>Button<><>0<>0<><>::
+back.gd::GDScript::884063422376323700::1746710882::0::1::::<>Button<><>0<>0<><>::
+line_edit.gd::GDScript::7419729517331833320::1746694757::0::1::::<>LineEdit<><>0<>0<><>::
+continue.gd::GDScript::6557003102738760640::1746710882::0::1::::<>Button<><>0<>0<><>::
+Introduction.gd::GDScript::5929518521508121297::1746796814::0::1::::<>Control<><>0<>0<><>::
+continuar.gd::GDScript::4073032690580206184::1746711100::0::1::::<>Button<><>0<>0<><>::
+start_game.gd::GDScript::5536532220075546286::1746710882::0::1::::<>Button<><>0<>0<><>::
+::res://android/::1746610402
+::res://android/plugins/::1746610402
+::res://Escenas/::1747037790
+PantallaPrincipal.tscn::PackedScene::317440556116196736::1747037790::0::1::::<><><>0<>0<><>::uid://dyroylws11db3::::res://images/papiro.jpg<>uid://b6aib81rqaksp::::res://Fonts/Tagesschrift-Regular.ttf
+::res://Fonts/::1746621423
+OFL.txt::TextFile/TextFile::-1::1746621358::0::1::::<><><>0<>0<><>::
+Tagesschrift-Regular.ttf::FontFile/FontFile::4562764132437406907::1745443774::1746621423::1::::<><><>0<>0<>e82f8759243c23c4d3b3328be34e1647<>res://.godot/imported/Tagesschrift-Regular.ttf-84b2a431cd1d08bd4d35bb0efb21ee18.fontdata::
+::res://Global/::1746712593
+GameState.gd::GDScript::2569850961290267955::1746712593::0::1::::<>Node<><>0<>0<><>::
+::res://images/::1747038249
+background.jpg::CompressedTexture2D/CompressedTexture2D::101140313374134790::1746618498::1746618499::1::::<><><>0<>0<>4abc03fd02602775675a6e5d6ffcb60d<>res://.godot/imported/background.jpg-fecfc4c19b565abc1b6227560c1dede4.ctex::
+menu_dots.png::CompressedTexture2D::7337852049718415089::1747038239::1747038251::1::::<><><>0<>0<>9d5a321618711a5696dbb346ae898d18<>res://.godot/imported/menu_dots.png-0f94a24eac5592a66c993291d8464e68.ctex::
+papiro.jpg::CompressedTexture2D::8879782229759701114::1747036348::1747036433::1::::<><><>0<>0<>358cf3db040ce7db698b4d97dd2d555c<>res://.godot/imported/papiro.jpg-b6678a46e29923ceac800f81aaa160a2.ctex::

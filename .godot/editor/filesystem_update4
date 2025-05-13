@@ -1,0 +1,21 @@
+res://default_env.tres
+res://Main Menu.tscn
+res://start_game.gd
+res://copyright.gd
+res://Quit Game.gd
+res://Copyright.gd
+res://Copyright.tscn
+res://GameIntro.tscn
+res://back.gd
+res://line_edit.gd
+res://continue.gd
+res://Introduction.gd
+res://Global/GameState.gd
+res://Escenas/PantallaPrincipal.tscn
+res://Escenas/menu_button.gd
+res://continuar.gd
+res://Escenas/Capitulo1/label_1_1.gd
+res://Escenas/pantalla_principal.gd
+res://main_menu.gd
+res://Continuar.gd
+res://Continue.gd
