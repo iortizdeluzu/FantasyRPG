@@ -14,8 +14,6 @@ var ya_mostro_advertencia = false
 
 func _ready():
     _ocultar_botones_atributos()
-    comprobar_actualizaciones()
-
 
 func _on_continuar_pressed():
     var player_name = name_input.text.strip_edges()
@@ -75,36 +73,3 @@ func _on_button_carisma_pressed() -> void:
     continuar_button.visible = true
     message_label2.visible = true
     paso = 2
-
-
-func comprobar_actualizaciones():
-    var http = $HTTPRequestActualizador
-    http.request_completed.connect(_on_request_completed)
-    
-    var url = "https://github.com/iortizdeluzu/FantasyRPG/blob/main/latest_version.txt"  # Cambia por tu URL real
-    var err = http.request(url)
-    if err != OK:
-        print("Error al enviar la solicitud HTTP:", err)
-
-func _on_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
-    if response_code != 200:
-        print("Error al comprobar la versión. Código HTTP:", response_code)
-        return
-
-    var version_remota = body.get_string_from_utf8().strip_edges()
-    var version_local = GameState.VERSION
-
-    if version_remota != version_local:
-        print("Hay una nueva versión disponible:", version_remota)
-        mostrar_popup_actualizacion(version_remota)
-    else:
-        print("El juego está actualizado.")
-        
-func mostrar_popup_actualizacion(version_remota: String) -> void:
-    var popup = ConfirmationDialog.new()
-    popup.dialog_text = "Hay una nueva versión disponible: " + version_remota + ". ¿Deseas descargarla?"
-    popup.confirmed.connect(func():
-        OS.shell_open("https://TU_DOMINIO/descarga")  # Cambia al link de descarga
-    )
-    add_child(popup)
-    popup.popup_centered()
