@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbam3fhgb4khn"]
 
-[ext_resource type="Script" uid="uid://dg6s4ep262np0" path="res://Escenas/Capitulo1/capitulo_1_6.gd" id="1_qcv64"]
+[ext_resource type="Script" uid="uid://yiysap0g37ud" path="res://Escenas/Capitulo1/capitulo_1_8.gd" id="1_qcv64"]
 [ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="2_up3f7"]
 [ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="3_h4ph8"]
 
@@ -80,7 +80,7 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Capitulo16" type="Label" parent="ScrollContainer/VBoxContainer"]
+[node name="Capitulo18" type="Label" parent="ScrollContainer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 1000)
 layout_mode = 2
 size_flags_horizontal = 3

@@ -73,7 +73,7 @@ func mostrar_popup_actualizacion(version_remota: String) -> void:
 	var popup = ConfirmationDialog.new()
 	popup.dialog_text = "Hay una nueva versión disponible: " + version_remota + ". ¿Deseas descargarla?"
 	popup.confirmed.connect(func():
-		OS.shell_open("https://drive.google.com/file/d/1ac6BdGmiz3xSe6RRyIA6OU34wBu4sn-4/view?usp=sharing")  # Cambia al link de descarga
+		OS.shell_open("https://drive.google.com/file/d/1ac6BdGmiz3xSe6RRyIA6OU34wBu4sn-4/view?usp=sharing")
 	)
 	add_child(popup)
 	popup.popup_centered()

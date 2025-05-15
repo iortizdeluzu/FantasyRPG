@@ -2,7 +2,6 @@ extends Control
 
 @onready var scroll_container = $ScrollContainer
 @onready var boton1 = $"ScrollContainer/VBoxContainer/HBoxContainer/Opcion 1"
-@onready var boton2 = $"ScrollContainer/VBoxContainer/HBoxContainer/Opcion 2"
 @onready var message_label = $"ScrollContainer/VBoxContainer/Capitulo14"
 
 
