@@ -1,0 +1,94 @@
+[gd_scene load_steps=4 format=3 uid="uid://31mg3lfd61ue"]
+
+[ext_resource type="Script" uid="uid://b525mldhwywjo" path="res://Escenas/pantalla_principal.gd" id="1_182hw"]
+[ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="2_q3j7o"]
+[ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="3_wln63"]
+
+[node name="CombatScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_182hw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_q3j7o")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.0666667, 0.0666667, 0.0666667, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ChapterTitle" type="Label" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_wln63")
+theme_override_font_sizes/font_size = 30
+text = "Capitulo 1: Las minas de Kragthûm"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("3_wln63")
+theme_override_font_sizes/font_size = 30
+text = "Menu   "
+
+[node name="PopupOpciones" type="PopupMenu" parent="MarginContainer/VBoxContainer/TopBar/MenuButton"]
+position = Vector2i(580, 60)
+size = Vector2i(131, 100)
+theme_override_fonts/font = ExtResource("3_wln63")
+theme_override_font_sizes/font_size = 30
+item_count = 2
+item_0/text = "Menú principal"
+item_0/id = 0
+item_1/text = "Guardar"
+item_1/id = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = -1.0
+offset_top = 116.0
+offset_right = -1.0
+offset_bottom = 145.0
+grow_horizontal = 2
+
+[node name="Name" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Label 1"
+
+[node name="HP" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HPmax" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/TopBar/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="id_pressed" from="MarginContainer/VBoxContainer/TopBar/MenuButton/PopupOpciones" to="." method="_on_popup_opciones_id_pressed"]

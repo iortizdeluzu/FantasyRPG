@@ -1,0 +1,186 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcdxnoeuyy5ve"]
+
+[ext_resource type="Script" uid="uid://c0s2ftlxienca" path="res://Escenas/Capitulo1/capitulo_1_1.gd" id="1_3i365"]
+[ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="2_yhei1"]
+[ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="3_pmt2g"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3i365")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yhei1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.0666667, 0.0666667, 0.0666667, 1)
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ChapterTitle" type="Label" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_pmt2g")
+theme_override_font_sizes/font_size = 30
+text = "Capitulo 1: Lo que el fuego no ilumina"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("3_pmt2g")
+theme_override_font_sizes/font_size = 30
+text = "Menu   "
+
+[node name="PopupOpciones" type="PopupMenu" parent="MarginContainer/TopBar/MenuButton"]
+position = Vector2i(580, 60)
+size = Vector2i(131, 100)
+theme_override_fonts/font = ExtResource("3_pmt2g")
+theme_override_font_sizes/font_size = 30
+item_count = 2
+item_0/text = "Menú principal"
+item_0/id = 0
+item_1/text = "Guardar"
+item_1/id = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Capitulo11" type="Label" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 1000)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pmt2g")
+theme_override_font_sizes/font_size = 30
+text = "
+
+El frío de Khargath no es como el resto de frios, ese que se alivia con pieles y vino espeso en una alegre taberna. Aquí, el viento corta como un cuchillo oxidado,, royendo la carne hasta que el dolor se convierte en parte de tí. Las montañas os rodean como dientes podridos, negras contra un cielo sin estrellas. No hay luna. No hay luces en la distancia. Solo el fuego, un parpadeo enfermizo que os mantiene vivos y os delata ante lo que acecha más allá del círculo de luz.
+
+Las llamas no crepitan alegres como en los hogares de los hombres. Aquí, la leña escasea, y lo que arde son restos de herramientas rotas, tablones podridos de viejas barracas, y huesos de bestias (o eso os dicen). El humo espeso huele a resina amarga y a algo peor—a carne chamuscada que nunca acaba de consumirse. La luz que proyecta es rojiza, como si el fuego mismo estuviera contaminado, y las sombras que dibuja en los rostros de tus compañeros son demasiado largas, demasiado negras, como si algo se negara a abandonar su piel.
+
+Y detrás de vosotros, las minas.
+
+Un coloso devorador de hombres, constanetemente hambriento de nuevas almas con las que alimentarse. No hay brillo en sus entrañas, solo una oscuridad que parece respirar. Las linternas de los mineros son como luciérnagas agonizantes, tragadas por esa negrura en cuanto se adentran unos pasos. Pero es ahí, en lo profundo, donde se encuentra lo que anhelan los reyes. Donde encuentran los Ecos Solidificados.
+
+Las gemas no pertenecen a este mundo. Lo sabes. Todos lo sabéis.
+
+No tienen nombre oficial, pero todos las conocen. Cristales violáceos que laten como corazones arrancados del pecho de algún dios olvidado. Dicen que quien las sostiene demasiado tiempo escucha susurros. Dicen que, a veces, los mineros desaparecen... y que las gemas brillan un poco más después.
+
+Alguien tose. Alguien escupe al fuego, y las llamas silban como bestias heridas. Hask —siempre Hask— evapora el aire húmedo con un chasquido ácido. Los demás ni se inmutan. Ya están acostumbrados.
+Tú conoces sus nombres, sus caras, sus olores. Pero no son tus hermanos. Aquí, en las minas de Khargath, nadie tiene hermanos. Solo cómplices. O víctimas.
+
+Droal. Tiene la barbilla más suave que el culo de un bebé. Demasiado joven. Demasiado asustado. Se aferra a su espada como si fuera el borde de un precipicio, con esos dedos delgados que aún no han aprendido a matar. Su armadura le queda grande, y el yelmo le cubre medio rostro, pero nada oculta ese tic nervioso cuando miente en su párpado izquierdo. Cada ruido lo hace saltar. Cada sombra lo hace mirar hacia atrás.
+
+—¿Creen que... volverán los del turno de día? —pregunta, por tercera vez esta noche.
+
+Nadie responde. Tan solo Hask se atreve a romper ese silencio incomodo que ha creado Droal pero, no de la manera en la que a este le gustaría.
+
+—Eh, Droal, ¿sabes por qué los novatos como tú no duran mucho aquí? —sonríe, mostrando un colmillo roto—. Porque corren... pero las sombras corren más rápido.
+
+Los chistes de Hask saben a sangre vieja. Ríe cuando debería callar. Cuando el viento aúlla, él imita el sonido con obscena precisión. Cuando alguien menciona a los desaparecidos, él apuesta a cuánto tardarán en encontrar los pedazos.
+
+Nadie se ríe. Droal parece que se va a mear. Hask sigue sonriendo, como si supiera algo que los demás no. Desde el otro lado de la hoguera Groal le lanza una mirada asesina. 
+
+Groal era tan grande que podría partir a un hombre en dos con solo mirarlo mal. Pero tú has visto cómo le da su ración de pan a los prisioneros hambrientos. Cómo murmura canciones de cuna en una lengua muerta cuando cree que nadie lo escucha.
+
+Vuelve la vista abajo y continua afila su hacha con movimientos lentos, deliberados. El sonido del metal contra la piedra es el único ritmo constante en esta noche maldita. 
+
+Lyssa, al lado de Groal, se acomoda buscando una posicion mas comoda. Dos hojas gemelas asoman desde sus botas como lenguas de serpiente ansiosas por morder. Su armadura ajustada muestra más curvas de las que la decencia permitiría, pero nadie se atreve a comentarlo. El último que intentó manosearle, dicen que todavía tiene heridas abiertas, y de eso ya hace verios meses.  
+
+El quinto integrande era Silencioso. Nadie sabia su nombre y nadie se lo habia preguntado. Apartado en las sombras, fuera de la luz del fuego,  como un espectro de mala memoria, observa la escena con ojos que han visto civilizaciones nacer y morir. Su manto, más viejo que las propias minas, se agita revelando brevemente un cinturón con una espada a cada lado - cada uno con su propia historia de horror. Nadie le pregunta. Nadie se atreve
+
+El viento aúlla entre las rocas, arrastrando consigo el polvo de las minas. El fuego crepita, iluminando rostros marcados por el cansancio. Droal rompe el silencio, jugueteando nervioso con el borde de su manta raída.
+
+- ¿Cuánto llevamos ya aquí? —comenta Droal mientras tuerce la boca— ¿Tres semanas? ¿Un mes?
+
+- ¡Qué más da! —Hask escupe al fuego, la saliva silbando al evaporarse—. Tiempo suficiente para saber que al Rey le importamos menos que la mierda en sus botines dorados.
+
+Goran levanta lentamente la vista de su hacha. El filo brilla rojizo a la luz de las llamas.
+
+- ¡Habla más bajo, imbécil! —ruge, aunque su mirada se posa en Lyssa, no en Hask—. Cierra el pico, bufón. O prefieres que te corten la lengua como al último que habló mal de Loktar \"el Grande\" - eso ultimo con un tono sarcástico.
+
+De pronto, un sonido.
+
+No es el viento.
+
+No es un animal.
+
+Es algo pequeño pero claro: el deslizamiento de tierra, el golpe seco de una piedra cayendo en algún lugar de la oscuridad, más allá del círculo de luz.
+
+Pero cuando vuelves la cabeza hacia los demás, ninguno ha reaccionado. Parece que solo has escuchado tú.
+
+¿Lo imaginaste?
+
+No. Lo oíste.
+
+Y ahora, el silencio se pudre alrededor tuyo, pesado como un cadáver colgado.
+
+¿Te atreves a girarte y enfrentar lo que acecha en las sombras?
+¿O prefieres quedarte mirando al fuego, rezando para que sea lo que sea que aceche en las sombras pase de largo?
+
+La primera decisión siempre es la más sangrienta.
+
+¿Cuál será tu movimiento?
+
+"
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion 1" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_pmt2g")
+theme_override_font_sizes/font_size = 30
+text = "Enfrentarse a la oscuridad"
+
+[node name="Opcion 2" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_pmt2g")
+theme_override_font_sizes/font_size = 30
+text = "Volver a la hoguera"
+
+[connection signal="pressed" from="MarginContainer/TopBar/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="id_pressed" from="MarginContainer/TopBar/MenuButton/PopupOpciones" to="." method="_on_popup_opciones_id_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/Opcion 1" to="." method="_on_opcion_1_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/Opcion 2" to="." method="_on_opcion_2_pressed"]

@@ -64,6 +64,20 @@ text = "nombre"
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
+[node name="genero_hombre_button" type="Button" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 26
+text = "Hombre"
+
+[node name="genero_mujer_button" type="Button" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7mn75")
+theme_override_font_sizes/font_size = 26
+text = "Mujer"
+
 [node name="Button_fuerte" type="Button" parent="VBoxContainer"]
 visible = false
 layout_mode = 2
@@ -93,7 +107,8 @@ layout_mode = 2
 localize_numeral_system = false
 theme_override_fonts/font = ExtResource("2_7mn75")
 theme_override_font_sizes/font_size = 30
-text = "Bueno....... Allá tu si quieres adentrarte en este mundo. No me hago responsable de tus desgracias. 
+text = "Bueno....... Allá tu !!
+Si quieres adentrarte en este mundo. No me hago responsable de tus desgracias. 
 
 Buena suerte."
 horizontal_alignment = 1
@@ -126,6 +141,8 @@ theme_override_font_sizes/font_size = 30
 text = "Al Menu Principal"
 script = ExtResource("3_tr1uk")
 
+[connection signal="pressed" from="VBoxContainer/genero_hombre_button" to="." method="_on_genero_hombre_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/genero_mujer_button" to="." method="_on_genero_mujer_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button_fuerte" to="." method="_on_button_fuerte_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button_inteligente" to="." method="_on_button_inteligente_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button_carisma" to="." method="_on_button_carisma_pressed"]

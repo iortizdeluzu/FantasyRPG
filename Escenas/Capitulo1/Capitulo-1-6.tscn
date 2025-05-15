@@ -1,0 +1,108 @@
+[gd_scene load_steps=4 format=3 uid="uid://vhqedphn6sfe"]
+
+[ext_resource type="Script" uid="uid://dg6s4ep262np0" path="res://Escenas/Capitulo1/capitulo_1_6.gd" id="1_algmh"]
+[ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="2_yim13"]
+[ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="3_8asn2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_algmh")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yim13")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.0666667, 0.0666667, 0.0666667, 1)
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ChapterTitle" type="Label" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_8asn2")
+theme_override_font_sizes/font_size = 30
+text = "Capitulo 1: Lo que el fuego no ilumina"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="MarginContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("3_8asn2")
+theme_override_font_sizes/font_size = 30
+text = "Menu   "
+
+[node name="PopupOpciones" type="PopupMenu" parent="MarginContainer/TopBar/MenuButton"]
+position = Vector2i(580, 60)
+size = Vector2i(131, 100)
+theme_override_fonts/font = ExtResource("3_8asn2")
+theme_override_font_sizes/font_size = 30
+item_count = 2
+item_0/text = "Menú principal"
+item_0/id = 0
+item_1/text = "Guardar"
+item_1/id = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 34.0
+offset_top = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Capitulo16" type="Label" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 1000)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_8asn2")
+theme_override_font_sizes/font_size = 30
+text = "
+"
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcion 1" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_8asn2")
+theme_override_font_sizes/font_size = 30
+text = "Continuar"
+
+[connection signal="pressed" from="MarginContainer/TopBar/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="id_pressed" from="MarginContainer/TopBar/MenuButton/PopupOpciones" to="." method="_on_popup_opciones_id_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/Opcion 1" to="." method="_on_opcion_1_pressed"]
