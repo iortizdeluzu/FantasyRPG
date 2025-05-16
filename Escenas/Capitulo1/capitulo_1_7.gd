@@ -79,4 +79,7 @@ func _guardar_partida():
 
 
 func _on_opcion_1_pressed() -> void:
-	get_tree().change_scene_to_file("res://Escenas/Capitulo1/Capitulo-1-9.tscn")
+	if  GameState.fuerza >= 5:
+		get_tree().change_scene_to_file("res://Escenas/Capitulo1/Capitulo-1-9.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Escenas/Capitulo1/Capitulo-1-10.tscn")

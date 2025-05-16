@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://crb00l8stldnw"]
 
-[ext_resource type="Script" uid="uid://chmwnkn8iniru" path="res://Escenas/Capitulo1/capitulo_1_12.gd" id="1_n1kvy"]
+[ext_resource type="Script" uid="uid://lqyppu7u3vaf" path="res://Escenas/Capitulo1/capitulo_1_12.gd" id="1_n1kvy"]
 [ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="2_hwh4v"]
 [ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="3_4f3c1"]
 
