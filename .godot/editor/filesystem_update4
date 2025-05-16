@@ -1,11 +1,4 @@
 res://default_env.tres
-res://Main Menu.tscn
-res://Escenas/Capitulo1/label_1_1.gd
-res://Escenas/Capitulo1/capitulo_1_2.gd
-res://Escenas/Capitulo1/Capitulo-1-2.tscn
-res://Escenas/Capitulo1/Capitulo-1-7.tscn
-res://Escenas/Capitulo1/Capitulo-1-8.tscn
-res://Escenas/Capitulo1/capitulo_1_8.gd
-res://Escenas/Capitulo1/Capitulo-1-6.tscn
-res://Escenas/Capitulo1/capitulo_1_4.gd
-res://main_menu.gd
+res://Escenas/Capitulo1/Capitulo-1-12.tscn
+res://Escenas/Capitulo1/capitulo_1_12.gd
+res://Global/GameState.gd

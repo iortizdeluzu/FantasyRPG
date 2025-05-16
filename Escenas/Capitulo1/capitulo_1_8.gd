@@ -12,23 +12,44 @@ func _ready():
 	GameState.capitulo_actual = capitulo_actual
 	print("Capítulo actualizado a:", GameState.capitulo_actual)
 	message_label.text = "
-	La hoguera crepitaba, baja ya, sus llamas agonizantes pintando rostros cansados. Te frotas los ojos, convencido de haber imaginado aquel sonido entre las rocas. Quizá solo fue el viento, piensas, mientras Hask lanza otro chiste obsceno y Goran gruñe por enésima vez.
-Entonces el mundo estalla en violencia.
+	El silencio se rompe en mil pedazos.
 
-Un silbido.
+Una flecha silba junto a tu oreja, tan cerca que el aire al desplazarse te quema como un látigo de fuego. Alcanzas a sentir el roce de las plumas contra tu piel antes de que el proyectil se clave con un seco sonido \"thunk\" en el tronco donde, un segundo antes, Hask apoya la cabeza.
 
-Un chillido.
+—¡Hijos de perra! —ruge Hask, sus ojos inyectados en sangre mientras escupe al suelo—. ¡Nos quieren enterrar aquí!
 
-Droal se incorpora de golpe, los ojos muy abiertos, la boca formando una \"O\" perfecta.
-La flecha le atraviesa la garganta con un plop húmedo.
-Por un instante grotesco, parece querer hablar. Sus dedos se enganchan al astil de madera, como si pudiera deshacer lo ocurrido. Luego cae de rodillas, y la sangre brota a borbotones entre sus dedos, negra a la luz del fuego.
-El caos estalla.
-Goran ruge como un oso herido, su hacha Fauces de Hierro girando sobre su cabeza antes de estrellarse contra el pecho del primer soldado que emerge de las sombras. Las costillas crujen como ramas secas.
-Hask recibe una flecha en el hombro, pero ni siquiera parece notarlo. Su cuchillo encuentra un ojo, luego una yugular.— ¡Esto es por el chico, cabrones! —escupe rojo escarlata salpicándole los dientes rotos.
-Lyssa baila entre dos atacantes, sus dagas dibujando arabescos mortales. Uno cae con la femoral abierta, el otro ahogándose en su propia sangre. 
-El Silencioso... no lucha. Se limita a apartarse de una flecha que iba directa a su corazón, como si supiera exactamente dónde estaría. Sus ojos no dejan de mirar más allá de los atacantes, hacia la oscuridad absoluta.
-Droal se desploma de costado, sus ojos vidriosos reflejando las llamas por última vez. Un hilo de saliva y sangre le corre por la barbilla. Su espada, esa espada demasiado grande para él, yace inútil en el polvo.
-Los atacantes —cinco, quizá seis— retroceden cuando Goran arranca literalmente la cabeza de uno de ellos. \"¡No bastará!\", grita un hombre con capucha antes de huir cojeando, dejando atrás a sus compañeros moribundos."
+Goran se alza como una torre de músculo y rabia.
+
+—¡Droal, mueve el culo o te lo corto yo mismo! —brama mientras empuja al muchacho detrás de una roca. Justo a tiempo. Otra flecha se estrella contra la piedra donde el joven estaba, astillando el aire con su impacto.
+
+Te abalanzas hacia adelante, tu espada encuentra el vientre blando de un atacante que emerge de las sombras. La hoja se hunde hasta la empuñadura, caliente y pegajosa. El hombre cae con un gemido, pero no hay tiempo para celebrar—otro ya viene hacia ti, su hacha levantada.
+
+Lyssa no necesita aviso. Ya es una sombra entre las sombras, sus dagas gemelas, Susurro y Promesa, trazando líneas plateadas en la oscuridad.
+
+—¡Cinco ratas visibles! —grita mientras su primera cuchillada encuentra la garganta de un atacante. La sangre brota negra a la luz de la luna—. ¡Y más escondidas como cobardes!
+
+No ves a Silencioso pero deduces que esta haciendo alguna de las suyas. Es el mejor buscando el punto debil del enemigo.
+
+Hask carga como un toro herido, su cuchillo hundiéndose en el vientre de un hombre con armadura gastada. La hoja sale roja, pero el enemigo no cae. En cambio, responde con un codazo que parte el labio de Hask en dos.
+
+Droal, el pobre Droal, se agacha como un conejo acorralado. Pero cuando un soldado se abalanza sobre él, su espada se alza por puro instinto. El acero encuentra carne, y el chico grita casi tan fuerte como el hombre que se desploma sobre él, chorreando vida por el costado.
+
+—¡L-lo hice! —jadea, mirando sus manos manchadas con ojos desorbitados.
+
+Los atacantes, maldita sea, son buenos. Pero vosotros sois mejores.
+
+Goran arranca un brazo de un solo tajo, y el dueño de ese brazo aúlla como un animal herido antes de desplomarse. Lyssa baila entre dos enemigos, dejando a uno desangrándose con una sonrisa y al otro ahogándose en su propia sangre.
+
+Es entonces cuando una voz en las sombras grita:
+
+—¡Retirada! ¡Informad al—!
+
+El mensaje se corta bruscamente. 
+
+Los atacantes supervivientes huyen, pero su retirada no es ordenada. Es pánico puro.
+
+Al cabo de pocos segundos, Silencioso emerge entre las sombras y se acerca a la hoguera.
+"
 
 
 func _on_menu_button_pressed() -> void:
@@ -49,7 +70,12 @@ func _guardar_partida():
 		"inteligencia": GameState.inteligencia,
 	   "carisma": GameState.carisma,
 		"capitulo": GameState.capitulo_actual,
-		"genero": GameState.genero
+		"genero": GameState.genero,
+		"Droal": GameState.Droal,
+		"Hask": GameState.Hask,
+		"Goral": GameState.Goral,
+		"Silencioso": GameState.Silencioso,
+		"Lyssa": GameState.Lyssa
 	}
 
 

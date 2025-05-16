@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dyroylws11db3" path="res://images/papiro.jpg" id="2_yhmhx"]
 [ext_resource type="FontFile" uid="uid://b6aib81rqaksp" path="res://Fonts/Tagesschrift-Regular.ttf" id="3_hteqv"]
 
-[node name="Control" type="Control"]
+[node name="Control2" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

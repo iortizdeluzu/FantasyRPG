@@ -10,7 +10,7 @@ var capitulo_actual = "1.1"  # Esto lo ajustas en cada escena diferente
 func _ready():
 	GameState.capitulo_actual = capitulo_actual
 	print("Capítulo actualizado a:", GameState.capitulo_actual)
-
+	
 func _on_menu_button_pressed() -> void:
 	$MarginContainer/TopBar/MenuButton/PopupOpciones.popup()
 
@@ -29,7 +29,12 @@ func _guardar_partida():
 		"inteligencia": GameState.inteligencia,
 		"carisma": GameState.carisma,
 		"capitulo": GameState.capitulo_actual,
-		"genero": GameState.genero
+		"genero": GameState.genero,
+		"Droal": GameState.Droal,
+		"Hask": GameState.Hask,
+		"Goral": GameState.Goral,
+		"Silencioso": GameState.Silencioso,
+		"Lyssa": GameState.Lyssa
 	}
 
 	var file = FileAccess.open("user://savegame.json", FileAccess.WRITE)
