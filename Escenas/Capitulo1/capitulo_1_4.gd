@@ -13,13 +13,16 @@ func _ready():
 	print("Capítulo actualizado a:", GameState.capitulo_actual)
 	message_label.text = "
 	Tu pulso se acelera antes de que tu mente termine de procesarlo. Eso no ha sido el viento. Tampoco una rata. El sonido ha sido demasiado hondo, demasiado deliberado. El aire huele a humedad podrida y a algo metálico, como cobre viejo. Tus pelos se erizan.
+	
 	Das tres pasos hacia la oscuridad. El calor del fuego se desvanece a tu espalda.
 	
 	Y entonces lo ves.
 	
 	Las sombras respiran.
 	
-	No son ilusiones. No son juegos de la luz. Se mueven con propósito, deslizándose entre las rocas como espectros en la noche."
+	No son ilusiones. No son juegos de la luz. Se mueven con propósito, deslizándose entre las rocas como espectros en la noche.
+	
+	"
 
 func _on_menu_button_pressed() -> void:
 	$MarginContainer/TopBar/MenuButton/PopupOpciones.popup()

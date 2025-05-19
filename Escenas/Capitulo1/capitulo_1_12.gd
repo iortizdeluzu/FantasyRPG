@@ -2,11 +2,11 @@ extends Control
 
 @onready var scroll_container = $ScrollContainer
 @onready var boton1 = $"ScrollContainer/VBoxContainer/HBoxContainer/Opcion 1"
-@onready var message_label = $"ScrollContainer/VBoxContainer/Capitulo111"
+@onready var message_label = $"ScrollContainer/VBoxContainer/Capitulo112"
 
 
 # Capítulo actual de la escena (puedes cambiarlo en cada escena)
-var capitulo_actual = "1.11"  # Esto lo ajustas en cada escena diferente
+var capitulo_actual = "1.12"  # Esto lo ajustas en cada escena diferente
 
 func _ready():
 	GameState.capitulo_actual = capitulo_actual
@@ -30,7 +30,9 @@ Los cadáveres enemigos yacen alrededor. Te limpias la hoja de tu espada con un 
 		
 		Droal tiembla como una hoja en medio del círculo, sus manos limpias pero su mirada perdida en algún punto entre las llamas y la oscuridad. Ha matado por primera vez esta noche, y el peso de eso se ve en sus ojos.
 		
-		—L-lo hice... —balbucea, mirando sus palmas como si esperara verlas manchadas—. Dioses, lo hice..."
+		—L-lo hice... —balbucea, mirando sus palmas como si esperara verlas manchadas—. Dioses, lo hice...
+		
+		"
 	
 	elif  GameState.Droal <= 0 and GameState.Hask >= 1:
 		message_label.text += "
@@ -54,7 +56,9 @@ Los cadáveres enemigos yacen alrededor. Te limpias la hoja de tu espada con un 
 		
 		—¿Qué? Si el chico siempre decía que quería ser un héroe... —Su voz se quiebra al final, transformando la broma en algo más oscuro, más amargo—. Ahora lo es, joder.
 		
-		Nadie ríe."
+		Nadie ríe.
+		
+		"
 
 	elif  GameState.Hask <= 0:
 		message_label.text += " 

@@ -13,16 +13,27 @@ func _ready():
 	print("Capítulo actualizado a:", GameState.capitulo_actual)
 	message_label.text = "
 		Respiras hondo, forzando tus músculos a relajarse. No fue nada. Te concentras en las llamas, en su danza hipnótica, en su calor que ya no calienta.
+		
 		—Qué puto asco de noche —masculla Hask—. Me pregunto si el gran Rey Loktar está tan cómodo en su trono de oro mientras nosotros nos comemos el polvo.
+		
 		Goran gruñe, pero esta vez hay algo distinto en su voz. No es una advertencia. Es... complicidad.
+		
 		—Dicen que los Altos Nobles de Vorthal no están contentos —rumia el gigante, pasando un dedo por el filo de su hacha—. Que las Piedras de Poder deberían ser de todos, no solo suyas.
+		
 		Lyssa ríe, un sonido afilado como el roce de sus dagas.
+		
 		—¿Y qué harán? ¿Enviar ejércitos? —sus ojos brillan con malicia—. Loktar tiene estas minas bien custodiadas... aunque la guardia sea pobres bastardos como nosotros.
+		
 		Droal, el joven, parpadea rápidamente.
+		
 		—P-pero... ¿y si vienen? ¿Si nos atrapan en medio?
+		
 		El Silencioso, por primera vez en horas, habla.
+		
 		—Los Altos Nobles no tolerarán por mucho tiempo que Loktar monopolice las minas —dice en voz baja—. Sus espías ya merodean por la zona.
+		
 		—P-pero si los nobles se rebelan... si el Consejo... —dice Droal mientras se ajusta el yelmo con manos temblorosas.
+		
 		—No les importa una mierda lo que pase —susurra con voz de tumba abierta—. Tan solo buscan el poder."
 	
 

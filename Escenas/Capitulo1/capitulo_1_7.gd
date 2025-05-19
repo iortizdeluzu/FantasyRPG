@@ -38,7 +38,9 @@ El Silencioso... no lucha. Se limita a apartarse de una flecha que iba directa a
 
 Droal se desploma de costado, sus ojos vidriosos reflejando las llamas por última vez. Un hilo de saliva y sangre le corre por la barbilla. Su espada, esa espada demasiado grande para él, yace inútil en el polvo.
 
-Los atacantes —cinco, quizá seis— retroceden cuando Goran arranca literalmente la cabeza de uno de ellos. \"¡No bastará!\", grita un hombre con capucha antes de huir cojeando, dejando atrás a sus compañeros moribundos."
+Los atacantes —cinco, quizá seis— retroceden cuando Goran arranca literalmente la cabeza de uno de ellos. \"¡No bastará!\", grita un hombre con capucha antes de huir cojeando, dejando atrás a sus compañeros moribundos.
+
+"
 
 
 func _on_menu_button_pressed() -> void:

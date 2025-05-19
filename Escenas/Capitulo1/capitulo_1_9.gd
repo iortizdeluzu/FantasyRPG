@@ -18,6 +18,7 @@ func _ready():
 Tu espada sale de su vaina antes de que el segundo atacante termine de emerger de las sombras. El acero corta el aire con un silbido mortal, encontrando carne en el cuello del hombre. Su sangre salpica tu rostro, caliente y espesa. No hay tiempo para pensar—solo para actuar.
 
 Goran es un torbellino de furia a tu lado. Su hacha Fauces de Hierro gira en un arco perfecto, destrozando el escudo de un enemigo como si fuera papel.
+
 —¡Formación! —ruge, y aunque no sois soldados, sus años de experiencia os guían. Te colocas instintivamente a su izquierda, protegiendo su flanco vulnerable.
 
 Hask sangra por el hombro, pero su risa sigue siendo tan afilada como su cuchillo.
@@ -40,7 +41,7 @@ El mensaje se corta bruscamente.
 
 Los atacantes supervivientes huyen, pero su retirada no es ordenada. Es pánico puro.
 
-Al cabo de pocos segundos, Silencioso emerge entre las sombras y se acerca a la hoguera.
+Al cabo de pocos segundos, Silencioso emerge entre las sombras.
 
 "
 

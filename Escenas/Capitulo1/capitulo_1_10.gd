@@ -61,7 +61,7 @@ El mensaje se corta bruscamente.
 
 Los atacantes supervivientes huyen, pero su retirada no es ordenada. Es pánico puro.
 
-Al cabo de pocos segundos, Silencioso emerge entre las sombras y se acerca a la hoguera.
+Al cabo de pocos segundos, Silencioso emerge entre las sombras.
 
 "
 

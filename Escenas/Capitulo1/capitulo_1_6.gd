@@ -32,7 +32,9 @@ Droal, el pobre Droal, tiene los ojos como platos y las manos temblorosas, pero 
 
 El Silencioso… no se mueve. Pero sus ojos… sus ojos siguen las sombras que se arrastran hacia vosotros con la calma de un hombre que ya ha visto este juego antes.
 
-Y entonces, las sombras atacan."
+Y entonces, las sombras atacan.
+
+"
 
 func _on_menu_button_pressed() -> void:
 	$MarginContainer/TopBar/MenuButton/PopupOpciones.popup()

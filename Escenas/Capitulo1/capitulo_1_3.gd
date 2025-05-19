@@ -13,10 +13,15 @@ func _ready():
 	print("Capítulo actualizado a:", GameState.capitulo_actual)
 	message_label.text = "
 	Tus dedos se cierran alrededor del puño de la espada antes de que te des cuenta. Algo se mueve ahí fuera, y no es el viento.
+	
 	Te levantas con movimientos calculados, evitando hacer ruido.
+	
 	—¿Eh? ¿Adónde vas, loco? —Hask arquea una ceja, pero no se mueve del tronco donde está apoyado.
+	
 	Los demás apenas alzan la vista:
+	
 	Goran sigue afilando su hacha, pero sus ojos te siguen entre las llamas. Lyssa detiene el giro de sus dagas, sonriendo como un gato ante un ratón herido. Droal se encoge aún más, como si quisiera desaparecer. El Silencioso... simplemente observa.
+	
 	"
 
 func _on_menu_button_pressed() -> void:

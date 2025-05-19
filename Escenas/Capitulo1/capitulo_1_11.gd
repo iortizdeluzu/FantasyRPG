@@ -75,7 +75,11 @@ Los cadáveres enemigos yacen alrededor. Te limpias la hoja de tu espada con un 
 	
 	Cuando se incorpora, sus ojos se encuentran con los tuyos. No hay sorpresa en ellos. No hay culpa. Sus ojos grises te mantienen la mirada un instante demasiado largo, desafiando cualquier pregunta.
 	
-	Luego empieza a acercarse al resto del grupo.
+	¿Como actuas ante lo que acabas de ver? 
+	
+	¿Lo dejas estar? Sea lo que sea que haya podido coger, no sera importante. Tan solo ha saqueado el cuerpo de un soldado. Ademas, ahora mismo hay otras preocupaciones mas importantes de las que encargarse.
+	
+	¿O por el contrario le preguntaras que ha cogido del cuertpo del soldado muerto?
 	
 	"
 

@@ -32,7 +32,7 @@ func _on_continuar_pressed():
 				GameState.player_name = player_name
 				name_input.visible = false
 				continuar_button.visible = false
-				message_label.text = "%s... un nombre poderoso.\n\n¿Eres hombre, mujer?" % player_name
+				message_label.text = "%s... hmmm.\n\n¿Eres hombre, mujer?" % player_name
 				_mostrar_botones_genero()
 				paso = 1
 

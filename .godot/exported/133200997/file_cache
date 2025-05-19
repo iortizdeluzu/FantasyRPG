@@ -1,18 +1,18 @@
-res://default_env.tres::cd71409c98caffc33454bd99d3b9225e::1747401299::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
-res://GameIntro.tscn::7e83d186cd280b19f18b4f8ff8f5a960::1747398952::res://.godot/exported/133200997/export-86ab6a20c970898ab8e2dd0633d8aec4-GameIntro.scn
-res://Main Menu.tscn::b85407be7a9efa4a42692249f0950ce4::1747398952::res://.godot/exported/133200997/export-a33d09f771cd04e34b900b4e4f2bfce2-Main Menu.scn
-res://Copyright.tscn::efd5c7ab3af470a988d8a845bfdd0d96::1747221184::res://.godot/exported/133200997/export-494f73ee2344d879cd1a0a779a2b2374-Copyright.scn
-res://Escenas/PantallaPrincipal.tscn::bdbdb28c147e5d9d7070b5db6aa4c6c8::1747134176::res://.godot/exported/133200997/export-5831d930d68a109d8a28f3165be4f077-PantallaPrincipal.scn
-res://Escenas/Capitulo1/Capitulo-1-1.tscn::71b8d6482dedc0d741e969b4763ba4a0::1747398952::res://.godot/exported/133200997/export-f1b9d03005f444470abd7add67f45c99-Capitulo-1-1.scn
-res://Escenas/Capitulo1/Capitulo-1-2.tscn::9cf3352bd3db9f7fcc6fd14ab3880ffc::1747398952::res://.godot/exported/133200997/export-159ac3c640c92af67315485703271502-Capitulo-1-2.scn
-res://Escenas/Capitulo1/Capitulo-1-3.tscn::a6c257ca7bb59df195bc4611e597a888::1747398952::res://.godot/exported/133200997/export-cbfab9f7eb11b3e90c64da7f39bc4dd3-Capitulo-1-3.scn
-res://Escenas/Capitulo1/Capitulo-1-4.tscn::bd8d113c168a8e652fdaf553d9b18c8a::1747398952::res://.godot/exported/133200997/export-b12284659f9a4bb860074cd822b79b0b-Capitulo-1-4.scn
-res://Escenas/Capitulo1/Capitulo-1-5.tscn::1b9fe4cec30f93c91de4ce17de0b0ab2::1747398952::res://.godot/exported/133200997/export-de997d9bbb5fc5611eca10b7ff4940dc-Capitulo-1-5.scn
-res://Escenas/Capitulo1/Capitulo-1-6.tscn::580baf33fbd914bb541d8d1676f5eada::1747398953::res://.godot/exported/133200997/export-acc194bf62813fa7d03edcc6c202a6ce-Capitulo-1-6.scn
-res://Escenas/Capitulo1/Capitulo-1-8.tscn::c77ee1a9f73b033ac19e6cb8822aa025::1747398953::res://.godot/exported/133200997/export-463eb996104d28ba392501e214a273cf-Capitulo-1-8.scn
-res://Escenas/Capitulo1/Capitulo-1-7.tscn::489381a449c1d445c29950f5836eb1cb::1747399111::res://.godot/exported/133200997/export-62253673e8b8110dfa28d4fdf698523f-Capitulo-1-7.scn
-res://Escenas/Combate.tscn::804529495b45bc1c840e1b398989461a::1747235216::res://.godot/exported/133200997/export-a4ebf509559251fb17e6e51b923d2ce0-Combate.scn
-res://Escenas/Capitulo1/Capitulo-1-9.tscn::32cd4931811d9e3a54a2d9d3897bec43::1747398953::res://.godot/exported/133200997/export-7421f86fa25a8969423e2cfd6201c004-Capitulo-1-9.scn
-res://Escenas/Capitulo1/Capitulo-1-10.tscn::4f3f773652b0c79fc45f3f2417f0b2e8::1747398953::res://.godot/exported/133200997/export-d63edcf3faa746bed2241f6bc7a5fe65-Capitulo-1-10.scn
-res://Escenas/Capitulo1/Capitulo-1-11.tscn::a6164d46e37eb1195a6e5ac7df991155::1747400758::res://.godot/exported/133200997/export-059b4589a13fb579335002c4e979f59e-Capitulo-1-11.scn
-res://Escenas/Capitulo1/Capitulo-1-12.tscn::cfd1f322a68af129f5865b92bf11d7c5::1747401299::res://.godot/exported/133200997/export-6c315f7d15dda09439409e9dd02c6373-Capitulo-1-12.scn
+res://default_env.tres::cd71409c98caffc33454bd99d3b9225e::1747576475::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://GameIntro.tscn::7e83d186cd280b19f18b4f8ff8f5a960::1747403479::res://.godot/exported/133200997/export-86ab6a20c970898ab8e2dd0633d8aec4-GameIntro.scn
+res://Main Menu.tscn::b85407be7a9efa4a42692249f0950ce4::1747574911::res://.godot/exported/133200997/export-a33d09f771cd04e34b900b4e4f2bfce2-Main Menu.scn
+res://Copyright.tscn::efd5c7ab3af470a988d8a845bfdd0d96::1747403478::res://.godot/exported/133200997/export-494f73ee2344d879cd1a0a779a2b2374-Copyright.scn
+res://Escenas/PantallaPrincipal.tscn::bdbdb28c147e5d9d7070b5db6aa4c6c8::1747403478::res://.godot/exported/133200997/export-5831d930d68a109d8a28f3165be4f077-PantallaPrincipal.scn
+res://Escenas/Capitulo1/Capitulo-1-1.tscn::e730c3917ee933092dfc44f95a9d07c0::1747573982::res://.godot/exported/133200997/export-f1b9d03005f444470abd7add67f45c99-Capitulo-1-1.scn
+res://Escenas/Capitulo1/Capitulo-1-2.tscn::9cf3352bd3db9f7fcc6fd14ab3880ffc::1747404345::res://.godot/exported/133200997/export-159ac3c640c92af67315485703271502-Capitulo-1-2.scn
+res://Escenas/Capitulo1/Capitulo-1-3.tscn::a6c257ca7bb59df195bc4611e597a888::1747574425::res://.godot/exported/133200997/export-cbfab9f7eb11b3e90c64da7f39bc4dd3-Capitulo-1-3.scn
+res://Escenas/Capitulo1/Capitulo-1-4.tscn::bd8d113c168a8e652fdaf553d9b18c8a::1747574464::res://.godot/exported/133200997/export-b12284659f9a4bb860074cd822b79b0b-Capitulo-1-4.scn
+res://Escenas/Capitulo1/Capitulo-1-5.tscn::1b9fe4cec30f93c91de4ce17de0b0ab2::1747403478::res://.godot/exported/133200997/export-de997d9bbb5fc5611eca10b7ff4940dc-Capitulo-1-5.scn
+res://Escenas/Capitulo1/Capitulo-1-6.tscn::580baf33fbd914bb541d8d1676f5eada::1747574514::res://.godot/exported/133200997/export-acc194bf62813fa7d03edcc6c202a6ce-Capitulo-1-6.scn
+res://Escenas/Capitulo1/Capitulo-1-8.tscn::c77ee1a9f73b033ac19e6cb8822aa025::1747403478::res://.godot/exported/133200997/export-463eb996104d28ba392501e214a273cf-Capitulo-1-8.scn
+res://Escenas/Capitulo1/Capitulo-1-7.tscn::489381a449c1d445c29950f5836eb1cb::1747574530::res://.godot/exported/133200997/export-62253673e8b8110dfa28d4fdf698523f-Capitulo-1-7.scn
+res://Escenas/Combate.tscn::804529495b45bc1c840e1b398989461a::1747403478::res://.godot/exported/133200997/export-a4ebf509559251fb17e6e51b923d2ce0-Combate.scn
+res://Escenas/Capitulo1/Capitulo-1-9.tscn::32cd4931811d9e3a54a2d9d3897bec43::1747574593::res://.godot/exported/133200997/export-7421f86fa25a8969423e2cfd6201c004-Capitulo-1-9.scn
+res://Escenas/Capitulo1/Capitulo-1-10.tscn::4f3f773652b0c79fc45f3f2417f0b2e8::1747574494::res://.godot/exported/133200997/export-d63edcf3faa746bed2241f6bc7a5fe65-Capitulo-1-10.scn
+res://Escenas/Capitulo1/Capitulo-1-11.tscn::f8677745bb6f1e8ea760f5b2a87b88ed::1747576475::res://.godot/exported/133200997/export-059b4589a13fb579335002c4e979f59e-Capitulo-1-11.scn
+res://Escenas/Capitulo1/Capitulo-1-12.tscn::cfd1f322a68af129f5865b92bf11d7c5::1747575157::res://.godot/exported/133200997/export-6c315f7d15dda09439409e9dd02c6373-Capitulo-1-12.scn
